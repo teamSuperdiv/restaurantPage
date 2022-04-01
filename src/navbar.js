@@ -11,6 +11,7 @@ export default function navbar() {
     const nav = document.createElement('ul');
     for (let i = 0; i < 3; i++) {
         const listEl = document.createElement('li');
+        listEl.classList.add('listItem');
         listEl.innerHTML = `${navItems[i+1]}`
         nav.appendChild(listEl);
     }
